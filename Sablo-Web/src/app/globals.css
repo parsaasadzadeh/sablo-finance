@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+
+/* ───── توکن‌های تم (همان رنگ‌های ThemeContext اپ) ───── */
+/* این بلوک را در globals.css (بعد از import های tailwind) بچسبان */
+
+:root {
+  color-scheme: light;
+
+  --bg: #F7F4EE;
+  --card: #FFFFFF;
+  --border: #EDE8DC;
+  --ink: #26241F;
+  --ink-light: #3A372F;
+  --muted: #8A8273;
+  --muted-light: #9A8F78;
+  --hover: #FBF9F4;
+
+  --brand: #0F6F5C;
+  --brand-dark: #0C5A4A;
+  --brand-light: rgba(15, 111, 92, 0.1);
+
+  --input-border: #E5E1D6;
+  --input-bg: #FCFBF8;
+
+  --danger: #D9624C;
+  --danger-light: #FCF1EE;
+  --danger-border: #F3C9BF;
+
+  --warning: #92400E;
+  --warning-light: #FFFBEB;
+  --warning-border: #FDE68A;
+
+  --info: #1E40AF;
+  --info-light: #EFF6FF;
+
+  --emerald-bg: #ECFDF5;
+  --emerald-text: #065F46;
+  --emerald-mid: #059669;
+  --rose-bg: #FFF1F2;
+  --rose-text: #9F1239;
+  --rose-mid: #E11D48;
+  --amber-bg: #FFFBEB;
+  --amber-text: #92400E;
+  --amber-mid: #D97706;
+  --orange-bg: #FFF7ED;
+  --orange-text: #9A3412;
+
+  --rubika: #6B21C8;
+  --rubika-light: #F3E8FF;
+
+  --overlay: rgba(0, 0, 0, 0.45);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #121212;
+  --card: #1E1E1E;
+  --border: #2C2C2C;
+  --ink: #F0F0F0;
+  --ink-light: #D8D4CA;
+  --muted: #9A9A9A;
+  --muted-light: #8A8578;
+  --hover: #242424;
+
+  --brand: #1AAE8F;
+  --brand-dark: #149078;
+  --brand-light: rgba(26, 174, 143, 0.16);
+
+  --input-border: #3A3A3A;
+  --input-bg: #242424;
+
+  --danger: #EF4444;
+  --danger-light: #3A1414;
+  --danger-border: #7A2222;
+
+  --warning: #F59E0B;
+  --warning-light: #3A2E1A;
+  --warning-border: #5C4A1F;
+
+  --info: #60A5FA;
+  --info-light: #152238;
+
+  --emerald-bg: #0F2E27;
+  --emerald-text: #34D399;
+  --emerald-mid: #10B981;
+  --rose-bg: #3A1420;
+  --rose-text: #FB7185;
+  --rose-mid: #F43F5E;
+  --amber-bg: #3A2E1A;
+  --amber-text: #FBBF24;
+  --amber-mid: #F59E0B;
+  --orange-bg: #3A2416;
+  --orange-text: #FB923C;
+
+  --rubika: #9B5DE5;
+  --rubika-light: #2A1F3D;
+
+  --overlay: rgba(0, 0, 0, 0.65);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
