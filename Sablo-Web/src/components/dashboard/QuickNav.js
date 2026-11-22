@@ -1,11 +1,13 @@
 "use client";
 import Link from "next/link";
-import { BarChart2, Target, ArrowLeftRight, Landmark, CreditCard, Settings, PiggyBank, Users, Calculator,FileText } from "lucide-react";
+import { BarChart2, Target, ArrowLeftRight, Landmark, CreditCard, Settings, PiggyBank, Users, Calculator,FileText , Zap,Repeat} from "lucide-react";
 
 const ITEMS = [
+  { label: "ثبت با هوش مصنوعی", icon: Zap, path: "/ai-chat" },
   { label: "گزارش‌های مالی", icon: BarChart2, path: "/reports" },
   { label: "اهداف مالی", icon: Target, path: "/goals" },
   { label: "تراکنش‌ها", icon: ArrowLeftRight, path: "/transactions" },
+  { label: "تکرارشونده‌ها", icon: Repeat, path: "/recurring" },
   { label: "وام‌ها", icon: Landmark, path: "/loans" },
   { label: "طلب و بدهی", icon: Users, path: "/obligations" },
   { label: "بودجه‌بندی", icon: PiggyBank, path: "/budgets" },
