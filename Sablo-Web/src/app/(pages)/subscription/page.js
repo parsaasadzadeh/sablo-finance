@@ -15,18 +15,20 @@ const perMonth = (price, months) => Math.round(price / months / 100) * 100;
 
 /* قیمت‌ها به «تومان»؛ باید با پلن‌های اپ و SKUهای پنل مایکت یکی باشند */
 const PLANS = [
-  { id: "sablo_monthly",  label: "ماهانه", price: 22000,  oldPrice: null,   period: "ماه",   months: 1,  badge: null,           highlight: null },
-  { id: "sablo_biannual", label: "۶ ماهه", price: 119000, oldPrice: 132000, period: "۶ ماه", months: 6,  badge: null,           highlight: null },
-  { id: "sablo_annual",   label: "سالانه", price: 169000, oldPrice: 264000, period: "سال",   months: 12, badge: "بهترین ارزش", highlight: "۴ ماه رایگان 🎁" },
+  { id: "sablo_monthly",  label: "ماهانه", price: 69000,  oldPrice: null,   period: "ماه",   months: 1,  badge: null,           highlight: null },
+  { id: "sablo_biannual", label: "۶ ماهه", price: 299000, oldPrice: 414000, period: "۶ ماه", months: 6,  badge: null,           highlight: null },
+  { id: "sablo_annual",   label: "سالانه", price: 399000, oldPrice: 828000, period: "سال",   months: 12, badge: "بهترین ارزش", highlight: "۴ ماه رایگان 🎁" },
 ];
 const DEFAULT_PLAN_ID = "sablo_annual";
 
 const FEATURES = [
+  "ثبت تراکنش سریع با هوش مصنوعی",
   "ثبت نامحدود تراکنش",
   "مدیریت وام و اقساط",
   "مدیریت کارت‌های بانکی",
   "انتقال پول بین کارت‌ها",
   "مدیریت دسته‌بندی هزینه‌ها",
+  "ثبت تراکنش های تکرار شونده",
   "مدیریت منابع درآمد",
   "بودجه‌بندی ماهانه با هشدار مصرف",
   "ثبت و پیگیری طلب و بدهی",
